@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>L20N POC</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="defaultLanguage" content="en-US">
+  <meta name="availableLanguages" content="de, en-US, fr, pl">
+    <script defer src="../node_modules/l20n/dist/bundle/web/l20n.js"></script>
+  <link rel="localization" href="locales/ao-la.ftl">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li data-l10n-id="page" />
+            <li data-l10n-id="discussion" />
+            <li data-l10n-id="edit" />
+        </ul>
+    </nav>
+</header>
+  <ul class="menu">
+
+      <h1 data-l10n-id="hello" data-l10n-args='{"username": "Satya"}'></h1>
+  <span data-l10n-id="about"></span>
+
+  </ul>
+<p data-l10n-id="description"></p>
+<p data-l10n-id="welcome" data-l10n-args='{"user" : "Bruce"}' > </p>
+<span data-l10n-id="unreadEmails" data-l10n-args='{"user" :"Bruce","emailCount": 5}'></span>
+</body>
+</html>
